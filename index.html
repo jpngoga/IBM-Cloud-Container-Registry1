@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guestbook - v1</title>
+</head>
+<body>
+    <h1>Guestbook - v1</h1>
+
+    <form id="guestbook-form">
+        <input type="text" id="message"
+               placeholder="Enter your message" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <ul id="messages"></ul>
+
+    <script>
+        document.getElementById("guestbook-form")
+            .addEventListener("submit", function(event) {
+                event.preventDefault();
+                const input = document.getElementById("message");
+                const item = document.createElement("li");
+                item.textContent = input.value;
+                document.getElementById("messages").appendChild(item);
+                input.value = "";
+            });
+    </script>
+</body>
+</html>
