@@ -1,3 +1,4 @@
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -14,11 +15,14 @@ spec:
     spec:
       containers:
         - name: guestbook
-          image: us.icr.io/sn-labs-jpngoga/guestbook:v1
+          image: us.icr.io/sn-labs-jpngoga/guestbook:v2
+          env:
+            - name: APP_VERSION
+              value: "v2"
           ports:
-            - containerPort: 80
+            - containerPort: 3000
           resources:
             requests:
-              cpu: 100m
+              cpu: 2m
             limits:
-              cpu: 500m
+              cpu: 5m

@@ -1,0 +1,21 @@
+The push refers to repository [us.icr.io/sn-labs-jpngoga/guestbook]
+587852cc616e: Preparing
+08cc6e48fb38: Preparing
+d284c6380ce3: Preparing
+dac6ca30c6d4: Preparing
+ee527e6a3aab: Preparing
+5f70bf18a086: Preparing
+ea0dc0ce5a73: Preparing
+c0f1022b22a9: Preparing
+5f70bf18a086: Waiting
+ea0dc0ce5a73: Waiting
+c0f1022b22a9: Waiting
+587852cc616e: Layer already exists
+ee527e6a3aab: Layer already exists
+dac6ca30c6d4: Layer already exists
+d284c6380ce3: Layer already exists
+08cc6e48fb38: Layer already exists
+ea0dc0ce5a73: Layer already exists
+c0f1022b22a9: Layer already exists
+5f70bf18a086: Layer already exists
+v1: digest: sha256:b37b15ffdc932274ee5333fc6fa924714ba1d9badaa5a6224e36c1c4785696e5 size: 1987

@@ -1,3 +1,10 @@
-FROM httpd:2.4
-COPY index.html /usr/local/apache2/htdocs/index.html
-EXPOSE 80
+FROM node:20-alpine
+
+WORKDIR /app
+
+COPY server.js .
+COPY index.html .
+
+EXPOSE 3000
+
+CMD ["node", "server.js"]
